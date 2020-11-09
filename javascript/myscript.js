@@ -14,11 +14,30 @@ for (var key in studente) {
 
 
 var studenti = [
-  ["Maria", "Rossi", "20"],
-  ["Mario", "Rossi", "21"]
+  {
+
+    "nome" : "Maria",
+
+    "cognome" : "Rossi",
+
+    "eta" : 20,
+
+  },
+
+  {
+
+    "nome" : "Mario",
+
+    "cognome" : "Rossi",
+
+    "eta" : 21,
+
+  }
 ];
 
-for (var key in studente) {
-  document.getElementById('stampa2').innerHTML = "<b>Nome:</b> " + studenti[0][0] + " <b>Cognome:</b>: " + studenti[0][1] + " <b>Età:</b> " + studenti[0][2];
-  document.getElementById('stampa2').innerHTML = "<b>Nome:</b> " + studenti[1][0] + " <b>Cognome:</b>: " + studenti[1][1] + " <b>Età:</b> " + studenti[1][2];
+
+
+for (var i = 0; i < studenti.length; i++) {
+  var tizio = studenti[i];
+  console.log(tizio.nome, tizio.cognome, tizio.eta);
 }
