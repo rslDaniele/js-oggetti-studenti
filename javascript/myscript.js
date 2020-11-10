@@ -8,10 +8,13 @@ var studente = {
 
 }
 
+// STAMPA STUDENTE
+
 for (var key in studente) {
   document.getElementById('stampa1').innerHTML = "<b>Nome:</b> " + studente.nome + " <b>Cognome:</b>: " + studente.cognome + " <b>Età:</b> " + studente.eta;
 }
 
+// ARRAY DI OGGETTI
 
 var studenti = [
   {
@@ -32,12 +35,22 @@ var studenti = [
 
     "eta" : 21,
 
+  },
+
+  {
+
+    "nome" : "Dario",
+
+    "cognome" : "Rossi",
+
+    "eta" : 23,
+
   }
 ];
 
-
+console.log(studenti);
+// CICLO STAMPA OGGETTI
 
 for (var i = 0; i < studenti.length; i++) {
-  var tizio = studenti[i];
-  console.log(tizio.nome, tizio.cognome, tizio.eta);
+  console.log(studenti[i].nome + " " + studenti[i].cognome)
 }
