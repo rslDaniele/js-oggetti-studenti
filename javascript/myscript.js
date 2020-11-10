@@ -1,10 +1,10 @@
 var studente = {
 
-  "nome" : "Pinco",
+  'nome' : "Pinco",
 
-  "cognome" : "Pallo",
+  'cognome' : "Pallo",
 
-  "eta" : 19,
+  'eta' : 19,
 
 }
 
@@ -19,31 +19,31 @@ for (var key in studente) {
 var studenti = [
   {
 
-    "nome" : "Maria",
+    'nome' : "Maria",
 
-    "cognome" : "Rossi",
+    'cognome' : "Rossi",
 
-    "eta" : 20,
-
-  },
-
-  {
-
-    "nome" : "Mario",
-
-    "cognome" : "Rossi",
-
-    "eta" : 21,
+    'eta' : 20,
 
   },
 
   {
 
-    "nome" : "Dario",
+    'nome' : "Mario",
 
-    "cognome" : "Rossi",
+    'cognome' : "Rossi",
 
-    "eta" : 23,
+    'eta' : 21,
+
+  },
+
+  {
+
+    'nome' : "Dario",
+
+    'cognome' : "Rossi",
+
+    'eta' : 23,
 
   }
 ];
@@ -58,11 +58,11 @@ for (var i = 0; i < studenti.length; i++) {
 // UTENTE AGGIUNGE OGGETTI TRAMITE PROMPT
 
 var aggiunta = {
-  "nome" : prompt("inserisci nome"),
+  'nome' : prompt("inserisci nome"),
 
-  "cognome" : prompt("inserisci cognome  "),
+  'cognome' : prompt("inserisci cognome  "),
 
-  "eta" : prompt("inserisci eta"),
+  'eta' : parseInt(prompt("inserisci eta")),
 
 };
 
