@@ -54,3 +54,17 @@ console.log(studenti);
 for (var i = 0; i < studenti.length; i++) {
   console.log(studenti[i].nome + " " + studenti[i].cognome)
 }
+
+// UTENTE AGGIUNGE OGGETTI TRAMITE PROMPT
+
+var aggiunta = {
+  "nome" : prompt("inserisci nome"),
+
+  "cognome" : prompt("inserisci cognome  "),
+
+  "eta" : prompt("inserisci eta"),
+
+};
+
+studenti.push(aggiunta);
+console.log(studenti);
